@@ -5,7 +5,7 @@ use warnings;
 use feature 'say';
 use SequencesDB::Schema;
 use Data::Printer
-my $schema = SequencesDB::Schema->connect('dbi:mysql:sequences_dtb', 'root', '2hest9hu');
+my $schema = SequencesDB::Schema->connect('dbi:mysql:sequences_dtb', 'root', 'PASSWORD');
 
 my $user_input = 'mouse';
 my $column = 'organism_organism.organism_name';
