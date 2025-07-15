@@ -1,0 +1,107 @@
+[% META title = 'Database Search' %]
+
+<div class="container" style="margin-top: 50px; margin-left: 10px; ">
+
+	<div class="row">
+                <div class="col-sm-1">
+                        <a class="btn btn-primary" role="button" href="[% c.uri_for('/search') %]"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a>
+                </div>
+
+		<div class="col-sm-1">
+                        <a class="btn btn-primary" role="button" href="[% c.uri_for('/new') %]"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New </a>
+                </div>
+	</div>
+
+	<h2>Search results:</h2>
+
+	<div class="row">
+		<div class="col-sm-10">
+			<table class="table table-bordered table-hover">
+				<tr>
+					<th></th>
+					<th>Filename</th>
+					<th>Path</th>
+					<th>Library ID</th>
+					<th>Organism</th>
+					<th>Tissue</th>
+					<th>Cell</th>
+					<th>Experiment</th>
+					<th>Background</th>
+					<th>Method</th>
+					<th>Antibody</th>
+					<th>Sequencer</th>
+					<th>Repeat</th>
+					<th>Replicate</th>
+					<th>SHA2</th>
+
+				</tr>
+			[% WHILE ( row = rs.next ) %]
+				[% array_files = row.files_inner  %]
+				[% FOREACH  r_files IN array_files  %]
+				<tr>
+					<td><a href="[% c.uri_for('/edit') %]?file_id=[% r_files.file_id %]" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit </a></td>
+					<td>[% r_files.file_name %]</td>
+					<td>[% r_files.file_path %]</td>
+					<td>[% row.library_id %]</td>
+					<td>[% row.organism_organism.organism_name %]</td>
+					<td>[% row.tissue_tissue.tissue_name %]</td>
+					<td>[% row.cell_cell.cell_name %]</td>
+					<td>[% row.experiment_experiment.experiment_name %]</td>
+					<td>[% row.background_background.background_name %]</td>
+					<td>[% row.method_method.method_name %]</td>
+					<td>[% row.antibody_antibody.antibody_name %]</td>
+					<td>[% row.sequencer_sequencer.sequencer_name %]</td>
+					<td>[% row.repeat_id %]</td>
+					<td>[% row.replicate_id %]</td>
+					<td>[% row.sha2 %]</td>
+
+				</tr>
+				[% END %]
+			[% END %]
+			</table>
+		
+			[% pager = rs.pager %]
+			<p> Showing [% pager.first %] to [% pager.last %] entries from [% pager.total_entries %]. </p>
+
+			[% first_page = pager.current_page - 5 %]
+			[% last_page = pager.current_page + 5 %]
+
+			[% IF first_page <= 0 %]
+				[% first_page = pager.first_page %] 
+			[% END %]
+			
+			[% IF last_page > pager.last_page %]
+				[% last_page = pager.last_page %]		
+			[% END %]
+
+			
+			<ul class="pagination">
+			
+			[% IF !pager.previous_page %]
+				<li class="previous disabled"><a href="#">&larr; Previous</a></li>
+		
+			[% ELSE %]
+				<li class="previous"><a href="[% c.request.uri_with( { 'page' => pager.previous_page } ) %]">&larr; Previous</a></li>
+			[% END %]
+
+			[% FOREACH page IN [ first_page .. last_page ] %]
+			    
+				<li
+				[% IF page == c.request.param('page') %]
+					class="active"
+				[% END %]
+				><a href="[% c.request.uri_with( { 'page' =>  page }) %]">[% page %]</a></li>
+
+			[% END %]
+			
+			  
+				[% IF !pager.next_page %]
+					<li class="next disabled"><a href="#">Next &rarr;</a></li>
+				
+				[% ELSE %]
+					<li class="next"><a href="[% c.request.uri_with( { 'page' => pager.next_page } ) %]">Next &rarr;</a></li>
+				[% END %]			
+			</ul>
+		</div>		
+	</div>
+</div>

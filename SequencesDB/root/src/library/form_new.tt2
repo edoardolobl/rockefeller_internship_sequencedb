@@ -1,0 +1,450 @@
+[% META title = 'Database Search' %]
+
+<script>
+	function validateForm() {
+	    
+		var field1 = ["filename", "sha2", "path", "repeat", "replicate"];
+		var field2 = ["organism", "tissue", "cell", "experiment", "background", "method", "sequencer"];
+		
+		var i;
+		
+		for (i=0; i < field1.length; i++) {
+			var value = $("#"+field1[i]);
+			if ( value.val() == null || value.val() == "") {
+				alert( field1[i] + " must be filled out!");
+				return false;
+			}
+		}
+
+		if ( isNaN( $("#"+field1[3]).val() ) ) {
+			alert( "Repeat field: Only numbers!" );
+			return false;
+		}
+
+		if ( isNaN( $("#"+field1[4]).val() ) ) {
+			alert( "Replicate field: Only numbers!" );
+			return false;
+		}
+
+		for (i=0; i < field2.length; i++) {
+			var value = $("#"+field2[i]);
+			var value2 = $("#"+"input_"+field2[i]);
+			if (value.val() == "" && value2.val() == "") {
+				alert( "Select or insert a new " + field2[i] );
+				return false;
+				
+			}
+		}
+	}
+ 
+</script>
+
+
+<div class="container" style="margin-top: 50px;">
+	
+	<div class="row">
+			[% IF success %]
+			<div class="alert alert-success" role="alert">
+                        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                        [% success %]
+                        </div>
+			[% END %]
+
+
+			[% IF error1 %]
+			<div class="alert alert-danger" role="alert">
+  			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  			<span class="sr-only">Error:</span>
+  			[% error1 %]
+			</div>
+			[% END %]
+
+			[% IF error2 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error2 %]
+                        </div>
+			[% END %]
+
+
+			[% IF error3 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error3 %]
+                        </div>
+
+			[% END %]
+
+			[% IF error4 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error4 %]
+                        </div>
+			[% END %]
+
+			[% IF error5 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error5 %]
+                        </div>
+			[% END %]
+
+			[% IF error6 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error6 %]
+                        </div>
+			[% END %]
+
+			[% IF error7 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error7 %]
+                        </div>
+			[% END %]
+
+			[% IF error8 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error8 %]
+                        </div>
+			[% END %]
+
+			[% IF error9 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error9 %]
+                        </div>
+			[% END %]
+	
+			[% IF error11 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error11 %]
+                        </div>
+			[% END %]
+	
+			[% IF error12 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error12 %]
+                        </div>
+			[% END %]
+			
+			[% IF error13 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error13 %]
+                        </div>
+			[% END %]
+
+			[% IF error14 %]
+			<div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        [% error14 %]
+                        </div>
+			[% END %]
+
+			
+	<form role="form" name="myHiddenForm" action="/new/library/insert_file"  method="POST">
+
+		[% IF error15 %]
+		<div class="alert alert-warning" role="alert">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                [% error15 %]
+		<button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Insert file </button>
+                </div>
+		[% END %]
+		
+	<input type="hidden" name="library_id_validate" value="[% library_id_validate %]">
+	<input type="hidden" name="filename_validate" value="[% filename_validate %]">
+	<input type="hidden" name="path_validate" value="[% path_validate %]">
+
+	</form>	
+
+
+	</div>
+
+	
+	<div class="row">
+		<div class="form-group col-sm-1">
+			<a class="btn btn-primary" role="button" href="[% c.uri_for('/search') %]"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a>
+		</div>
+	</div>
+
+	[% IF file_id %]
+
+	<h2>Update a library file:</h2>
+	<h4 class="text-info">Instructions: In order to update a library file, select the options available or create a new record. All fields are required.<h4>
+
+	[% ELSE %]
+
+	<h2>Create a new library file:</h2>
+	<h4 class="text-info">Instructions: In order to create a new library file, select the options available or create a new record. All fields are required.<h4>
+	
+	[% END  %]
+
+	<br></br>
+
+	<form role="form" name="myForm" action="/new/library" onsubmit="return validateForm()"  method="POST">
+
+	<div class="row">	
+		<div class="form-group col-sm-12">
+      	 		<label for="filename">Filename:</label>
+      			<input type="text" class="form-control" id="filename" placeholder="e.g. sequence_07162015.fastq" name="filename" value="[% filename %]" >
+    		</div>
+	</div>
+
+	<div class="row">
+ 		<div class="form-group col-sm-12">
+      			<label for="sha2">SHA2:</label>
+      			<input type="text" class="form-control" id="sha2" placeholder="e.g. 07977db88d9a076f0a6c9b0f71715cdc48b5270cda0e7b8a955a69be0d9761d7" name="sha2" value="[% sha2 %]"  >
+    		</div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-12">
+    			<label for="path">File path:</label>
+      			<input type="text" class="form-control" id="path" placeholder="e.g. /data_alpha/home/" name="path" value="[% path %]"  >
+    		</div>
+	</div>
+	
+	<div class="row">
+		<div  class="form-group col-sm-3">
+      			<label for="organism">Select an organism:</label>
+      			<select  class="form-control" id="organism" name="organism">
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Organism').search_rs({},{order_by => { '-asc' => 'organism_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.organism_id == organism_id %]	
+        			<option value="[% element.organism_id %]" selected>[% element.organism_name %]</option>
+				[% ELSE %]
+        			<option value="[% element.organism_id %]" >[% element.organism_name %]</option>
+				[% END %]
+      			[% END %]
+      			</select>	
+    		</div>
+
+		<div class="form-group col-sm-2">
+		</div>
+
+		<div class="form-group col-sm-7">
+			<label for="input_organism">New organism:</label>
+			<input type="text" class="form-control" id="input_organism" placeholder="e.g. Mouse" name="input_organism" value="[% organism %]" >
+		</div>
+	</div>		
+
+	<div class="row">
+		<div class="form-group col-sm-3">
+      			<label for="tissue">Select a tissue:</label>
+      			<select class="form-control" id="tissue" name="tissue" >
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Tissue').search_rs({},{order_by => { '-asc' => 'tissue_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.tissue_id == tissue_id %]
+        			<option value="[% element.tissue_id %]" selected >[% element.tissue_name %]</option>
+				[% ELSE %]
+				<option value="[% element.tissue_id %]">[% element.tissue_name %]</option>
+				[% END %]
+      			[% END %]
+      			</select> 
+    		</div>
+
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_tissue">New tissue:</label>
+                        <input type="text" class="form-control" id="input_tissue" placeholder="e.g. Spleen" name="input_tissue" value="[% tissue %]" >
+                </div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-sm-3">
+      			<label for="cell">Select a cell:</label>
+      			<select class="form-control" id="cell" name="cell">
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Cell').search_rs({},{order_by => { '-asc' => 'cell_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.cell_id == cell_id%]
+				<option value="[% element.cell_id %]" selected >[% element.cell_name %]</option>
+				[% ELSE %]
+        			<option value="[% element.cell_id %]">[% element.cell_name %]</option>
+				[% END %]
+      			[% END %]
+      			</select>
+    		</div>
+		
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_cell">New cell:</label>
+                        <input type="text" class="form-control" id="input_cell" placeholder="e.g. B Cell" name="input_cell" value="[% cell %]"  >
+                </div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-sm-3">
+      			<label for="experiment">Select an experiment:</label>
+      			<select class="form-control" id="experiment" name="experiment">
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Experiment').search_rs({},{order_by => { '-asc' => 'experiment_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.experiment_id == experiment_id %]
+        			<option value="[% element.experiment_id %]" selected >[% element.experiment_name %]</option>
+				[% ELSE %]
+      				<option value="[% element.experiment_id %]">[% element.experiment_name %]</option>
+				[% END %]
+			[% END %]
+      			</select>
+    		</div>
+
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_experiment">New experiment:</label>
+                        <input type="text" class="form-control" id="input_experiment" placeholder="e.g. Qiao TC-Seq" name="input_experiment" value="[% experiment %]" >
+                </div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-3">
+      			<label for="background">Select a background:</label>
+      			<select class="form-control" id="background" name="background">
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Background').search_rs({},{order_by => { '-asc' => 'background_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.background_id == background_id %]
+        			<option value="[% element.background_id %]" selected >[% element.background_name %]</option>
+				[% ELSE %]
+				<option value="[% element.background_id %]">[% element.background_name %]</option>
+      				[% END %]
+			[% END %]
+      			</select>
+    		</div>
+
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_background">New background:</label>
+                        <input type="text" class="form-control" id="input_background" placeholder="e.g. Activated ERTcre Spt5-/-" name="input_background" value="[% background %]" >
+                </div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-3">
+      			<label for="method">Select a method:</label>
+      			<select class="form-control" id="method" name="method">
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Method').search_rs({},{order_by => { '-asc' => 'method_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.method_id == method_id %]
+        			<option value ="[% element.method_id %]" selected >[% element.method_name %]</option>
+				[% ELSE %]
+				<option value ="[% element.method_id %]" >[% element.method_name %]</option>
+      				[% END %]
+			[% END %]
+      			</select>
+    		</div>
+
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_method">New method:</label>
+                        <input type="text" class="form-control" id="input_method" placeholder="e.g. RNA-Seq" name="input_method" value="[% method %]" >
+                </div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-sm-3">
+      			<label for="antibody">Select an antibody:</label>
+      			<select class="form-control" id="antibody" name="antibody">
+      			<option value="" >-SELECT-</option>
+      			[% row = c.model('DB::Antibody').search_rs({},{order_by => { '-asc' => 'antibody_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.antibody_id == antibody_id %]
+        			<option value="[% element.antibody_id %]" selected >[% element.antibody_name %]</option>
+				[% ELSE %]
+				<option value="[% element.antibody_id %]" >[% element.antibody_name %]</option>
+				[% END %]
+      			[% END %]
+      			</select>
+    		</div>
+
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_antibody">New antibody:</label>
+                        <input type="text" class="form-control" id="input_antibody" placeholder="e.g. NELF-A" name="input_antibody" value="[% antibody %]" >
+                </div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-3">
+      			<label for="sequencer">Select a sequencer:</label>
+      			<select class="form-control" id="sequencer" name="sequencer">
+      			<option value="">-SELECT-</option>
+      			[% row = c.model('DB::Sequencer').search_rs({},{order_by => { '-asc' => 'sequencer_name' } } ).all %]
+      			[% FOREACH element IN row %]
+				[% IF element.sequencer_id == sequencer_id %]
+				<option value="[% element.sequencer_id %]" selected >[% element.sequencer_name %]</option>	
+				[% ELSE %]
+        			<option value="[% element.sequencer_id %]">[% element.sequencer_name %]</option>
+				[% END %]
+      			[% END %]
+      			</select>
+    		</div>
+
+		<div class="form-group col-sm-2">
+                </div>
+
+                <div class="form-group col-sm-7">
+                        <label for="input_sequencer">New Sequencer:</label>
+                        <input type="text" class="form-control" id="input_sequencer" placeholder="e.g. HiSeq2000" name="input_sequencer" value="[% sequencer %]" >
+                </div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-2">
+      			<label for="repeat">Repeat (Only numbers):</label>
+      			<input type="text" class="form-control" id="repeat" placeholder="e.g. 1" name="repeat" value="[% repeat %]" >
+    		</div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-2">
+      			<label for="replicate">Replicate (Only numbers):</label>
+      			<input type="text" class="form-control" id="replicate" placeholder="e.g. 2" name="replicate" value="[% replicate %]" >
+		</div>
+	</div>
+
+
+	<div class="row">
+    		<div class ="form-group col-sm-1">
+      			<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Submit </button>
+    		</div>
+	</div>		
+
+	<input type="hidden" name="file_id" value="[% file_id %]">
+
+	</form>
+</div>
+

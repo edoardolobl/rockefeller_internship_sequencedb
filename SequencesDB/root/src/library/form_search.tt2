@@ -1,0 +1,90 @@
+[% META title = 'Database Search' %]
+
+<script>
+	function validateForm() {
+
+		if ( $("#search").val() && !$("#advanced_search").val() ) {
+			alert( "Select a search filter.");
+			return false;
+		}
+	}
+	
+</script>		
+
+
+<div class="container" style="margin-top: 50px;">
+
+	[% IF success %]
+	<div class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+        [% success %]
+        </div>
+	[% END %]
+
+	[% IF error15 %]
+	<div class="alert alert-danger" role="alert">
+  	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  	<span class="sr-only">Error:</span>
+  	[% error15 %]
+	</div>
+	[% END %]
+	
+	<h2 align="center">Database search</h2>
+	<h4 class="text-info">Instructions: <br> 1) Enter the term of interest; <br> 2) Select the type of the search; <br> 3) Select the search option. <br> To show all the files in the library, just leave the search field in blank and press the "Search" button.<h4>
+
+	<br>
+	
+	<form role="form" name="myForm" action="/result" onsubmit="return validateForm()" method="GET">
+
+	<div class="row">
+		<div class="form-group col-sm-1">
+			<a class="btn btn-primary" role="button" href="[% c.uri_for('/new') %]"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New File </a>
+		</div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-12">
+      			<label for="search"></label>
+      			<input type="text" class="form-control" id="search" name="field_value" value=[% field_value %]>
+    		</div>
+	</div>
+
+	<div class="row">
+    		<div class="form-group col-sm-2">
+      			<label for="advanced_search">Search by:</label>
+      			<select class="form-control" id="advanced_search" name="advanced_search">
+			<option value="" >-SELECT-</option>
+        		<option value="organism_organism.organism_name" >Organism</option>
+        		<option value="tissue_tissue.tissue_name" >Tissue</option>
+			<option value="cell_cell.cell_name" >Cell</option>
+        		<option value="experiment_experiment.experiment_name" >Experiment</option>
+        		<option value="background_background.background_name" >Background</option>
+			<option value="method_method.method_name" >Method</option>
+			<option value="antibody_antibody.antibody_name" >Antibody</option>
+			<option value="sequencer_sequencer.sequencer_name" >Sequencer</option>
+			<option value="files_inner.file_name">Filename</option>
+			<option value="me.sha2">SHA2</option>
+      			</select>
+    		</div>
+
+	
+	</div>
+
+	<div class="row">
+    		<div class="form-group  col-sm-2">
+      			<label for="sel2">Search options:</label>
+      			<select class="form-control" id="sel2" name="search_options">
+        		<option value="equal" >Perfetc match</option>
+        		<option value="similar" >Similar match</option>
+      			</select>
+    		</div>
+	</div>
+	
+	<div class="row">
+                <div class ="form-group col-sm-1">
+                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search </button>
+                </div>
+        </div>
+
+        </form>
+</div>

@@ -1,0 +1,334 @@
+#Organism	Tissue	Cell	Experiment	Background	Method	Repeat	Antibody	Sequencer	Read Type	Multiplex	Library
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDrv (cmyc I-sceI/I-sceI AIDrv IgH I-sceI/I-sceI)	TC-Seq	Replicate 1		HiSeq2000	Paired-end 1	1	r120921A_l8_nk__nk__TCseq_2A.r1.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDrv (cmyc I-sceI/I-sceI AIDrv IgH I-sceI/I-sceI)	TC-Seq	Replicate 1		HiSeq2000	Paired-end 2	1	r120921A_l8_nk__nk__TCseq_2A.r2.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDrv (cmyc I-sceI/I-sceI AIDrv IgH I-sceI/I-sceI)	TC-Seq	Replicate 2		MiSeq	Paired-end 1	0	CHIAO2_S1_L001_R1_001.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDrv (cmyc I-sceI/I-sceI AIDrv IgH I-sceI/I-sceI)	TC-Seq	Replicate 2		MiSeq	Paired-end 2	0	CHIAO2_S1_L001_R2_001.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDmm  (cmyc I-sceI/I-sceI AIDmm IgH I-sceI/I-sceI)	TC-Seq	Replicate 1		MiSeq	Paired-end 1	0	MEFIsceIrv_S1_L001_R1_001.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDmm  (cmyc I-sceI/I-sceI AIDmm IgH I-sceI/I-sceI)	TC-Seq	Replicate 1		MiSeq	Paired-end 2	0	MEFIsceIrv_S1_L001_R2_001.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDmm  (cmyc I-sceI/I-sceI AIDmm IgH I-sceI/I-sceI)	TC-Seq	Replicate 2		MiSeq	Paired-end 1		MEF-Iscei-rv-2_S1_L001_R1_001.fastq.gz
+
+Mouse		MEF	Qiao TC-Seq	MEF_cMyc_AIDmm  (cmyc I-sceI/I-sceI AIDmm IgH I-sceI/I-sceI)	TC-Seq	Replicate 2		MiSeq	Paired-end 2		MEF-Iscei-rv-2_S1_L001_R2_001.fastq.gz
+
+Mouse		MEF	Qiao RPA chipseq	MEF	ChIP-Seq		RPA	HiSeq2000	Single-end	0	MEFAID_NoIndex_L002_R1_001.fastq.gz
+
+Mouse		MEF		53bp1-/- infected with I-PpoI	ChIP-Seq	Replicate 1	RPA	HiSeq2000	Single-end	1	Michela_antiRPA_both_51bp_HiSeq2000_single_fastq_prefilter.txt.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	Control-Pol2	HiSeq2000	Single-end	1	r120715A_l6i5_mef__wt__Iggcontrol.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	Pol2	HiSeq2000	Single-end	1	r120715A_l6i6_mef__wt__pol2.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	Pol2-S2P	HiSeq2000	Single-end	1	r120715A_l6i12_mef__wt__pol2S2P.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	Pol2-S5P	HiSeq2000	Single-end	1	r120715A_l6i7_mef__wt__pol2S5P.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	Histone_control	HiSeq2000	Single-end	1	r120913A_l1i2_MEF__wt__unk1.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	H3K4	HiSeq2000	Single-end	1	r120913A_l1i4_MEF__wt__unk2.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	H3K27	HiSeq2000	Single-end	1	r120913A_l1i5_MEF__wt__unk3.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	H3K36	HiSeq2000	Single-end	1	r120913A_l1i6_MEF__wt__unk4.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	ChIP-Seq	Repeat1	NELF-A	HiSeq2000	Single-end	1	r120913A_l1i7_MEF__wt__unk5.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l4i12_primaryMEF__wt__RNASeq_repa.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l4i14_primaryMEF__wt__RNASeq_repb.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l4i16_primaryMEF__wt__RNASeq_repc.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	Control-Pol2	HiSeq2000	Single-end	1	r120715A_l7i12_mef__Spt5mm__pol2S2P.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	Pol2	HiSeq2000	Single-end	1	r120715A_l7i5_mef__Spt5mm__Iggcontrol.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	Pol2-S2P	HiSeq2000	Single-end	1	r120715A_l7i6_mef__Spt5mm__pol2.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	Pol2-S5P	HiSeq2000	Single-end	1	r120715A_l7i7_mef__Spt5mm__pol2S5P.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	Histone_control	HiSeq2000	Single-end	1	r120913A_l2i2_MEF__Spt5mm__unk6.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	H3K4	HiSeq2000	Single-end	1	r120913A_l2i4_MEF__Spt5mm__unk7.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	H3K27	HiSeq2000	Single-end	1	r120913A_l2i5_MEF__Spt5mm__unk8.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	H3K36	HiSeq2000	Single-end	1	r120913A_l2i6_MEF__Spt5mm__unk9.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	ChIP-Seq	Repeat1	NELF-A	HiSeq2000	Single-end	1	r120913A_l2i7_MEF__Spt5mm__unk10.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l4i19_primaryMEF__Spt5mm__RNASeq_repb.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l4i5_primaryMEF__Spt5mm__RNASeq_repa.fastq.gz
+
+Mouse		MEF	Rushad's Spt5 Experiment 2	ERTcre Spt5-/-	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l4i7_primaryMEF__Spt5mm__RNASeq_repc.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	Control-Pol2	HiSeq2000	Single-end	1	r120721A_l1i2_aB180__ERTcre__BeadsAlone.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	Pol2	HiSeq2000	Single-end	1	r120721A_l1i4_aB180__ERTcre__aPolIItotal.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	Pol2-S2P	HiSeq2000	Single-end	1	r120721A_l1i6_aB180__ERTcre__aPolIIS2P.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	Pol2-S5P	HiSeq2000	Single-end	1	r120721A_l1i5_aB180__ERTcre__aPolIIS5P.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	Histone_control	HiSeq2000	Single-end	1	r120913A_l3i2_aB180__wt__unk11.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	H3K4	HiSeq2000	Single-end	1	r120913A_l3i4_aB180__wt__unk12.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	H3K27	HiSeq2000	Single-end	1	r120913A_l3i5_aB180__wt__unk13.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	H3K36	HiSeq2000	Single-end	1	r120913A_l3i6_aB180__wt__unk14.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat1	NELF-A	HiSeq2000	Single-end	1	r120913A_l3i7_aB180__wt__unk15.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat2	H3K4	HiSeq2000	Single-end	1	r121024B_l3i4_aB180__wt__BiooIndex2.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat2	H3K27	HiSeq2000	Single-end	1	r121024B_l3i5_aB180__wt__BiooIndex3.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat2	H3K36	HiSeq2000	Single-end	1	r121024B_l3i6_aB180__wt__BiooIndex4.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	ChIP-Seq	Repeat2	NELF-A	HiSeq2000	Single-end	1	r121024B_l3i7_aB180__wt__BiooIndex5.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l3i2_aB180__wt__RNASeq_repa.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l3i7_aB180__wt__RNASeq_repb.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l3i15_aB180__wt__RNASeq_repc.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-	ChIP-Seq		Control-Pol2	HiSeq2000	Single-end	1	r120721A_l2i2_aB180__Spt5fm_ERTcre__BeadsAlone.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			Pol2	HiSeq2000	Single-end	1	r120721A_l2i4_aB180__Spt5fm_ERTcre__aPolIItotal.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			Pol2-S2P	HiSeq2000	Single-end	1	r120721A_l2i6_aB180__Spt5fm_ERTcre__aPolIIS2P.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			Pol2-S5P	HiSeq2000	Single-end	1	r120721A_l2i5_aB180__Spt5fm_ERTcre__aPolIIS5P.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			Histone_control	HiSeq2000	Single-end	1	r120913A_l4i2_aB180__Spt5mm__unk16.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			H3K4	HiSeq2000	Single-end	1	r120913A_l4i4_aB180__Spt5mm__unk17.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			H3K27	HiSeq2000	Single-end	1	r120913A_l4i5_aB180__Spt5mm__unk18.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			H3K36	HiSeq2000	Single-end	1	r120913A_l4i6_aB180__Spt5mm__unk19.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			NELF-A	HiSeq2000	Single-end	1	r120913A_l4i7_aB180__Spt5mm__unk20.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			H3K4	HiSeq2000	Single-end	1	r121024B_l4i4_aB180__Spt5mm__BiooIndex2.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			H3K27	HiSeq2000	Single-end	1	r121024B_l4i5_aB180__Spt5mm__BiooIndex3.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			H3K36	HiSeq2000	Single-end	1	r121024B_l4i6_aB180__Spt5mm__BiooIndex4.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-			NELF-A	HiSeq2000	Single-end	1	r121024B_l4i7_aB180__Spt5mm__BiooIndex5.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l3i4_aB180__Spt5mm__RNASeq_repa.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l3i13_aB180__Spt5mm__RNASeq_repb.fastq.gz
+
+Mouse		B cell	Rushad's Spt5 Experiment 2	Activated ERTcre Spt5-/-	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120721A_l3i16_aB180__Spt5mm__RNASeq_repc.fastq.gz
+
+Mouse		B cell	Rushad's MC	WT	ChIP-Seq	Replicate 1	RP2	HiSeq2000	Single-end	1	RP2_NoIndex_L001_R1_001.fastq.gz
+
+Mouse		B cell	Rushad's MC	WT	ChIP-Seq	Replicate 1	RP3	HiSeq2000	Single-end	1	RP3_NoIndex_L002_R1_001.fastq.gz
+
+Mouse		B cell	Rushad's MC	WT	ChIP-Seq	Replicate 1	RP4	HiSeq2000	Single-end	1	RP4_NoIndex_L003_R1_001.fastq.gz
+
+Mouse		B cell	Casellas Resting Experiment	Resting WT	ChIP-Seq	Replicate 1	Pol2	HiSeq2000	Single-end	1	r090318_l6_rB__wt__polII_repa.fq.gz
+
+Mouse		B cell	Casellas Resting Experiment	Resting WT	ChIP-Seq	Replicate 1		HiSeq2000	Single-end	1	r100618_l6_rB__wt__polII_repa.fq.gz
+
+Mouse		B cell	Casellas Resting Experiment	Resting WT	ChIP-Seq	Replicate 1	Pol2-S5P	HiSeq2000	Single-end	1	r100201_l3_rB__wt__polIIS5.fq.gz
+
+Mouse		B cell	Rushad's Resting Experiment	Resting WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120913A_l6i13_restB__wt__unk18.fastq.gz
+
+Mouse		B cell	Rushad's Resting Experiment	Resting WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120913A_l6i14_restB__wt__unk19.fastq.gz
+
+Mouse		B cell	Rushad's Resting Experiment	Resting WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120913A_l6i15_restB__wt__unk20.fastq.gz
+
+Mouse		B cell	Rushad's Resting Experiment	Activated WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120913A_l6i18_aB180__wt__unk21.fastq.gz
+
+Mouse		B cell	Rushad's Resting Experiment	Activated WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	r120913A_l6i19_aB180__wt__unk22.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l1_tumor__53BP1mm_igkAID__genome_090829_NoIndex_L001_R1_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l1_tumor__53BP1mm_igkAID__genome_090829_NoIndex_L001_R2_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l2_tumor__53BP1mm_igkAID__genome_100601_NoIndex_L002_R1_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l2_tumor__53BP1mm_igkAID__genome_100601_NoIndex_L002_R2_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l3_tumor__53BP1mm_igkAID__genome_110420_NoIndex_L003_R1_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l3_tumor__53BP1mm_igkAID__genome_110420_NoIndex_L003_R2_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	P53-/-  AIDtg	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l4_tumor__P53mm_igkAID__genome_DFR1535_NoIndex_L004_R1_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	P53-/-  AIDtg	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l4_tumor__P53mm_igkAID__genome_DFR1535_NoIndex_L004_R2_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	P53-/-  AIDtg	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l5_tumor__P53mm_igkAID__genome_DFR1536_NoIndex_L005_R1_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	P53-/-  AIDtg	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l5_tumor__P53mm_igkAID__genome_DFR1536_NoIndex_L005_R2_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	B6 WT	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l6_spleen__wt_B6__genome_ctrl_NoIndex_L006_R1_001.fastq.gz
+
+Mouse	Spleen	B cell	Nikas Experiment	B6 WT	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l6_spleen__wt_B6__genome_ctrl_NoIndex_L006_R2_001.fastq.gz
+
+Mouse	ES	B cell	Nikas Experiment	129SV WT	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l7_ES__wt_129SV__genome_ctrl_NoIndex_L007_R1_001.fastq.gz
+
+Mouse	ES	B cell	Nikas Experiment	129SV WT	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l7_ES__wt_129SV__genome_ctrl_NoIndex_L007_R2_001.fastq.gz
+
+Mouse	Tail	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 1	1	r111110B_l8_tail__53BP1mm__genome_ctrl_NoIndex_L008_R1_001.fastq.gz
+
+Mouse	Tail	B cell	Nikas Experiment	53bp1-/- AIDtg	Whole genome			HiSeq2000	Paired-end 2	1	r111110B_l8_tail__53BP1mm__genome_ctrl_NoIndex_L008_R2_001.fastq.gz
+
+Mouse		B cell	Michela's RPA	53bp1-/-	ChIP-Seq		RPA	HiSeq2000	Single-end	1	r120428A_l4i12_aB180__53BP1mm__RPA.fastq.gz
+
+Mouse		B cell	Michela's RPA	CD19cre	ChIP-Seq		RPA	HiSeq2000	Single-end	1	r120428A_l4i5_aB180__CD19cre__RPA.fastq.gz
+
+Mouse		B cell	Michela's RPA	CD19cre	ChIP-Seq		RPA	HiSeq2000	Single-end	1	r120605A_l1i4_ab180__Cd19Cre__RPA_repb.fastq.gz
+
+Mouse		B cell	Michela's RPA	CD19cre	ChIP-Seq		Rad51	HiSeq2000	Single-end	1	r120605A_l2i6_ab180__Cd19Cre__Rad51.fastq.gz
+
+Mouse		B cell	Michela's RPA	Ref1fl/fl CD19cre	ChIP-Seq		RPA	HiSeq2000	Single-end	1	r120428A_l4i6_aB180__Rif1flfl_Cd19cre__RPA.fastq.gz
+
+Mouse		B cell	Michela's RPA	Ref1fl/fl CD19cre	ChIP-Seq		RPA	HiSeq2000	Single-end	1	r120605A_l1i2_ab180__Rif1flfl_Cd19Cre__RPA_repb.fastq.gz
+
+Mouse		B cell	Michela's RPA	Ref1fl/fl CD19cre	ChIP-Seq		Rad51	HiSeq2000	Single-end	1	r120605A_l2i12_ab180__Rif1flfl_Cd19Cre__Rad51.fastq.gz
+
+Mouse		B cell	Heidi and Jacob? Experiment	Mutant	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	mutant_1_GCCAAT_L003_R1_001.fastq
+
+Mouse		B cell	Heidi and Jacob? Experiment	Mutant	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	mutant_2_CAGATC_L003_R1_001.fastq
+
+Mouse		B cell	Heidi and Jacob? Experiment	Mutant	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	mutant_3_CTTGTA_L003_R1_001.fastq
+
+Mouse		B cell	Heidi and Jacob? Experiment	WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	wt1_CGATGT_L003_R1_001.fastq
+
+Mouse		B cell	Heidi and Jacob? Experiment	WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	wt2_TGACCA_L003_R1_001.fastq
+
+Mouse		B cell	Heidi and Jacob? Experiment	WT	RNA-Seq	Tecnical Repeats		HiSeq2000	Single-end	1	wt3_ACAGTG_L003_R1_001.fastq
+
+		B cell	Issac's TC-Seq		TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_1_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq		TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_1_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_2_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_2_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_3_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_3_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_4_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_4_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	Sequencing control	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_5_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	Sequencing control	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_5_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_6_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_6_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_7_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_7_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_wt	TC-Seq			Genome Analyzer II	Paired-end 1	1	r1_s_8_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_wt	TC-Seq			Genome Analyzer II	Paired-end 2	1	r1_s_8_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_wt	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_1_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_wt	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_1_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_2_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_2_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_3_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_3_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_4_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_4_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	Sequencing control	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_5_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	Sequencing control	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_5_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_6_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	cMyc_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_6_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_7_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_7_2_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	r2_s_8_1_sequence.txt.gz
+
+		B cell	Issac's TC-Seq	IgH_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	r2_s_8_2_sequence.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 1	1	1_53bp_1_AID_read_1_fastq_prefilter.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 2	1	1_53bp_1_AID_read_2_fastq_prefilter.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	2_53bp_1_read_1_fastq.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	2_53bp_1_read_2_fastq.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 1	1	Mila_2_53bp_read_1_fastq_prefilter.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDrv	TC-Seq			Genome Analyzer II	Paired-end 2	1	Mila_2_53bp_read_2_fastq_prefilter.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 1	1	s_4_1_sequence.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDmm	TC-Seq			Genome Analyzer II	Paired-end 2	1	s_4_2_sequence.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDrv	TC-Seq			HiSeq2000	Paired-end 1	1	s_5_1_sequence.txt.gz
+
+		B cell	Mila's TC-Seq 53bp1 -/-	cMyc_53BP1mm_AIDrv	TC-Seq			HiSeq2000	Paired-end 2	1	s_5_2_sequence.txt.gz
+
+		B cell	Mila's TC-Seq	cMyc MycRv AIDwt	TC-Seq			MiSeq	Paired-end 1	0	TCSeqMila4_S1_L001_R1_001.fastq.gz
+
+		B cell	Mila's TC-Seq	cMyc MycRv AIDwt	TC-Seq			MiSeq	Paired-end 2	0	TCSeqMila4_S1_L001_R2_001.fastq.gz
+
+		B cell	Mila Virus integration	Virus only	IC-Seq						
+
+		B cell	Mila Virus integration	Virus only	IC-Seq						
+
+		B cell	Mila Virus integration	Virus + AIDrv	IC-Seq			MiSeq	Paired-end 1	0	Virus-integration-WT_S1_L001_R1_001.fastq.gz
+
+		B cell	Mila Virus integration	Virus + AIDrv	IC-Seq			MiSeq	Paired-end 2	0	Virus-integration-WT_S1_L001_R2_001.fastq.gz
+
+		B cell	Mila  TC-Seq Estrogen	cMyc_Estrogen+	TC-Seq			MiSeq	Paired-end 1	0	Mila3_S1_L001_R1_001.fastq.gz
+
+		B cell	Mila  TC-Seq Estrogen	cMyc_Estrogen+	TC-Seq			MiSeq	Paired-end 2	0	Mila3_S1_L001_R2_001.fastq.gz
+
+		B cell	Mila  TC-Seq Estrogen	cMyc_Estrogen-	TC-Seq			MiSeq	Paired-end 1	0	EstrogennegativeIscerv_S1_L001_R1_001.fastq.gz
+
+		B cell	Mila  TC-Seq Estrogen	cMyc_Estrogen-	TC-Seq			MiSeq	Paired-end 2	0	EstrogennegativeIscerv_S1_L001_R2_001.fastq.gz
+
+		B cell	Mila TDG experiment	5caC TDG knock-down	DIP-Seq	Replicate 1	5caC	HiSeq2000	Single-end	1	TDGacaC_1_CGATGT_L008_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5caC TDGwt	DIP-Seq	Replicate 1	5caC	HiSeq2000	Single-end	1	TDGacaC_2_TGACCA_L008_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5caC TDG knock-down	DIP-Seq	Replicate 2	5caC	HiSeq2000	Single-end	1	TDGacaC_3_ACAGTG_L008_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5caC TDGwt	DIP-Seq	Replicate 2	5caC	HiSeq2000	Single-end	1	TDGacaC_4_GCCAAT_L008_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5fC TDG knock-down	DIP-Seq	Replicate 1	5fC	HiSeq2000	Single-end	1	TDGaFC_1_CGATGT_L002_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5fC TDGwt	DIP-Seq	Replicate 1	5fC	HiSeq2000	Single-end	1	TDGaFC_2_TGACCA_L002_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5fC TDG knock-down	DIP-Seq	Replicate 2	5fC	HiSeq2000	Single-end	1	TDGaFC_3_ACAGTG_L002_R1_001.fastq.gz
+
+		B cell	Mila TDG experiment	5fC TDGwt	DIP-Seq	Replicate 2	5fC	HiSeq2000	Single-end	1	TDGaFC_4_GCCAAT_L002_R1_001.fastq.gz
+

@@ -1,0 +1,63 @@
+The Rockefeller University - Sequences_dtb v1.0
+-----------------------------------------------
+
+CONTENTS OF THIS FILE
+---------------------
+
+* Introduction
+
+* Requeriments
+
+* Execution
+
+* Troubleshooting
+
+
+INTRODUCTION
+------------
+
+The sql_final.pl converts information from a spreadsheet to a structure ready to be inserted in a SQL database. The script automatically insert the information in the sequences_dtb database. The database contains information, such as organism of study, cell, method used, type of sequencer, of DNA sequences linked to a library. 
+
+The file_path.pl inspects all the files inserted by the sql_final.pl in the database and insert SHA2-key at the Library table and file path at the File table.
+Files that does not exists at the library will be created, however without any other information, such as organism, experiment, method.
+Duplicate files will be inserted in an existing library.
+
+
+REQUERIMENTS
+------------
+
+In order to insert the information using sql_final.pl, the spreadsheet needs to be saved in the format “Text (tab delimited)”. The information in the spreadsheet needs to be organized in columns. The firstline of each columns is the header and should follow this order: Organism, Tissue, Experiment, Background, Method, Repeat, Antibody, Sequencer,  Read Type and Library.
+Repeat can be: “Repeat” + “number of the repeat” (e.g. Repeat1 or Repeat 1); “Replicate” + “number of the replicate” (e.g. Replicate2 or Replicate 2); Technical Repeats are always = 1.
+In the spreadsheet the column Library needs to contain the filename.
+
+The file_path.pl requires a “Text (tab delimited)” file with two columns. The first column must contain the SHA2-key with 64 characters. The second column must be the complete file path with the filename at the end (e.g. /backup_beta/work/isilva/NormalvsTumor/SRR949213_2.fastq).
+
+
+EXECUTION
+---------
+
+In order to run sql_final.pl, at the terminal, having the Text file in the same directory execute the follow command:
+
+#	perl sql_final.pl “Text (tab delimited) filename”
+
+#	e.g. "perl sql_final.pl project2015.txt"
+
+For file_path.pl, execute the script followed by the Text file (if it is at the same directory just put the filename):
+
+#	perl file_path.pl "Text (tab delimited) filename"
+
+#	e.g. "perl file_path.pl list_fastq_files.txt"
+
+
+TROUBLESHOOTING
+---------------
+
+The following warning can occur if a field it is empty at the Library column of the spreadsheet.
+
+#	Use of uninitialized value $array_file_values[1] in join or string at sql_final.pl line 302.
+ 
+The user should check the Library column at the spreadsheet, search for any empty fields and fill out with a filename. If even so, the user want to insert a library without a file just ignore the message.
+
+
+
+
