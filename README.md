@@ -410,12 +410,12 @@ This library is free software. You can redistribute it and/or modify it under th
 
 ## 👨‍💻 Authors & Contributors
 
-**Original Development (2014):**
+**Original Development (2015):**
 - **Edoardo** - Primary developer during summer internship
 - **Thiago Y. Oliveira** ([stratust](https://github.com/stratust)) - Direct advisor and programming mentor
 - **Michel C. Nussenzweig, M.D., Ph.D.** - Research supervisor, Laboratory of Molecular Immunology, The Rockefeller University
 
-**Modern Refactoring (2024):**
+**Modern Refactoring (2025):**
 - **Edoardo** - Security improvements, comprehensive testing, production deployment, and documentation
 
 **Special Thanks:**
@@ -433,8 +433,8 @@ For issues and questions:
 
 ## 🔄 Version History
 
-- **v1.0 (2014)** - Original version developed during Rockefeller University internship
-- **v2.0 (2024)** - Complete modernization with security improvements, comprehensive logging, full test coverage, and production deployment capabilities
+- **v1.0 (2015)** - Original version developed during Rockefeller University internship
+- **v2.0 (2025)** - Complete modernization with security improvements, comprehensive logging, full test coverage, and production deployment capabilities
 
 ---
 
